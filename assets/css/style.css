@@ -15,7 +15,7 @@
      flex-direction: column;
      /* Generic project styles */
      color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
+     font-family: 'Lato', sans-serif;
  }
 
  /* Header */
@@ -74,20 +74,20 @@
      display: block;
  }
 
-#nav-toggle {
-    display: none;
-}
+ #nav-toggle {
+     display: none;
+ }
 
-.nav-toggle-label {
-    font-size: 2rem;
-}
+ .nav-toggle-label {
+     font-size: 2rem;
+ }
 
  /* Main content */
  main {
      background-color: lightblue;
      /* Make main element take up any surplus space to push footer down */
      flex: 1 0 auto;
-    margin-top: 47px;
+     margin-top: 47px;
  }
 
  /* Footer */
@@ -107,30 +107,36 @@
          padding-right: 1rem;
      }
 
-         #menu {
-             display: flex;
+     #menu {
+         display: flex;
+     }
+
+     #menu>li {
+         padding-left: 1rem;
+     }
+
+     .nav-toggle-label {
+         display: none;
+     }
+
+     #logo {
+         font-size: 280%;
+         line-height: 75px;
+         margin: 0 0.5rem;
+     }
+
+     /* Main content */
+     main {
+         /* Push main content down to accommodate larger header */
+         margin-top: 79px;
+
+
+     }
+
+     /* Large devices (laptops and desktops, 992px and up) */
+     @media screen and (min-width: 992px) {
+         #menu a:hover {
+             border-bottom: 1px solid #3a3a3a;
          }
-
-                 #menu>li {
-                     padding-left: 1rem;
-                 }
-
-                                 .nav-toggle-label {
-                                     display: none;
-                                 }
-
-                                                                 #logo {
-                                                                     font-size: 280%;
-                                                                     line-height: 75px;
-                                                                     margin: 0 0.5rem;
-                                                                 }
-
-                                                                                                                                 /* Main content */
-                                                                                                                                 main {
-                                                                                                                                     /* Push main content down to accommodate larger header */
-                                                                                                                                     margin-top: 79px;
-                                                                                                                                 }
-
-
-
+        }
     }
